@@ -1,20 +1,34 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta  http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
         <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width"/>
 
         <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="./css/syntax.css">
+        <link rel="stylesheet" href="./css/syntax.css"/>
 
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="./css/bootstrap-theme.css"/>
+		
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/main.css"/>
 
     </head>
     <body>
-
+		<div class="blog-masthead">
+			<div class="container">
+				<nav class="blog-nav">
+					<a class="blog-nav-item active" href="./index.html">Accueil</a>
+					<a class="blog-nav-item" href="#">Exemple</a>
+					<a class="blog-nav-item" href="#">RSS</a>
+					<a class="blog-nav-item" href="./twitter.html">Twitter</a>
+					<a class="blog-nav-item" href="#">PearlTrees</a>
+				</nav>
+			</div>
+		</div>
         <div class="site">
           <div class="header">
             <h1 class="title"><a href="/">{{ site.name }}</a></h1>
