@@ -1,4 +1,4 @@
 name: VTECL : AngularJS
 markdown: redcarpet
 pygments: true
-baseurl: /vtecl
+baseurl:/vtecl
