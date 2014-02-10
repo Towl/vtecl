@@ -1,144 +1,168 @@
-.sommaire{
-	position:fixed;
-	left:10px;
-	top:10px;
-	width:20%;
+/*
+ * Globals
+ */
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #555;
 }
 
-.sommaire-title{
-	font-size:20px;
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
+  font-weight: normal;
+  color: #333;
+  margin-top: 0;
 }
 
-.sommaire-content{
-	width:100%;
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
 }
 
-.subnav{
-	font-size:80%;
-	margin-left:5%;
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  background-color: #428bca;
+  box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
 }
 
-.livrables{
-	position:fixed;
-	right:10px;
-	top:10px;
-	width:20%;
+/* Nav links */
+.blog-nav {
+
+}
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #cdddeb;
+}
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+  color: #fff;
+  text-decoration: none;
 }
 
-.livrables-title{
-	font-size:20px;
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+  color: #fff;
+}
+.blog-nav .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  content: " ";
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  border-right:  5px solid transparent;
+  border-left:   5px solid transparent;
+  border-bottom: 5px solid;
 }
 
-.livrables-content{
-	width:100%;
-	margin:0px;
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
 }
 
-th{
-	text-align:center;
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
 }
 
-.corps{
-	padding-left: 25%;
-	padding-right: 25%;
-	padding-top: 10px;
-	text-align:justify;
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
 }
 
-p{
-	padding-left: 20px;
-	padding-right: 10px;
+
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
 }
 
-.note:before{
-	content:"Note : ";
-	font:bold;
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  margin-bottom: 60px;
+}
+.blog-post-title {
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
 }
 
-code{
-	background:#E9E9E9;
-	color:#5050FF;
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
 }
 
-.code-container{
-	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-	font-size: 13px;
-	background-color: #f5f5f5;
-	max-height:500px;
-	max-width:100%;
-	overflow-x:scroll;
-	margin:0;
-}
-
-.code-panel{
-	width:80%;
-	margin-left:10%;
-	margin-right:10%;
-}
-
-.scrolled-code{
-	white-space: nowrap;
-	max-width:1000px;
-}
-
-.codeXML{	
-	color:blue;
-}
-
-.codeDTD{
-	color:black;
-}
-
-.codeJS{
-	color:black;
-}
-
-.tab{
-	padding-left:15px;
-}
-
-.tab-output{
-	padding-left:84px;
-}
-
-.tab-stylesheet{
-	padding-left:112px;
-}
-
-.element{
-	color:blue;
-}
-
-.attribut{
-	color:red;
-}
-
-.process-instruct{
-	color:red;
-}
-
-.comment{
-	color:green;
-}
-
-.valeur{
-	color:purple;
-}
-
-.contenuTexte{
-	color:black;
-}
-
-.variable{
-	font-style:italic;
-	font-weight:bold;
-	color:#002682;
-}
-
-.string{
-	color:#808080;
-}
-
-.number{
-	color:red;
-}
