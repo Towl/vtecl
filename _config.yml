@@ -1,3 +1,4 @@
-name: VTECL : AngularJS
+name: VTECL - AngularJS
 markdown: redcarpet
 pygments: true
+baseurl: /vtecl
