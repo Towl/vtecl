@@ -1,4 +1,5 @@
 name: VTECL - AngularJS
 markdown: redcarpet
-pygments: true
+pygments: false
 baseurl: /vtecl
+paginate: 2

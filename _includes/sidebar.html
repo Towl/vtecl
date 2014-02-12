@@ -1,0 +1,25 @@
+<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+  <div class="sidebar-module sidebar-module-inset">
+	<h4>A propos</h4>
+	<p>Ce blog présente le travail de veille technologique réalisé par mes soins pour le module ouvert sectoriel <em>Nouvelles technologie</em> de Centrale Lyon</p>
+  </div>
+  <div class="sidebar-module">
+	<h4>Archives</h4>
+	<h6>{{include.param}}</h6>
+	<ol class="list-unstyled">
+		{% for post in site.posts %}
+	  <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+		{% endfor %}
+	</ol>
+  </div>
+  <div class="sidebar-module">
+	<h4>Ailleurs</h4>
+	<ol class="list-unstyled">
+	  <li><a href="https://github.com/Towl/vtecl">GitHub</a></li>
+	  <li><a href="https://twitter.com/fcTowl">Twitter</a></li>
+	  <li><a href="http://www.pearltrees.com/#/N-fa=10581869&N-reveal=5&N-u=1_1799482&N-p=103650699&N-s=1_10647669&N-f=1_10647669">PearlTree</a></li>
+	  <li><a href="http://www.scoop.it/t/angularjs-firebase">Scoop-it</a></li>
+	  <li><a href="Une page qui n'existe pas !">Netvibes</a></li>
+	</ol>
+  </div>
+</div><!-- blog-sidebar -->

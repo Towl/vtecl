@@ -18,17 +18,18 @@
 
     </head>
     <body>
-		{% include navbar.html param="navBlog" %}
+		{% include navbar.html param="navAccueil" %}
 		<div class="container">
 		  <div class="blog-header">
-			<h1 class="blog-title"><a href="/">{{ site.name }}</a></h1>
+			<h1 class="blog-title">{{ site.name }}</h1>
 			<p class="lead blog-description"></p>
 		  </div>
 		  <div class="row">
 			<div class="col-sm-8 blog-main">
-			  {{ content }}
+				{{ content }}
+				{% include pagination.html %}
 			</div>
-			{% include sidebar.html param="{{site.date}}" %}
+			{% include sidebar.html param=month %}
 		  </div>
 		</div>
 		{% include footer.html %}
