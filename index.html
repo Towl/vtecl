@@ -9,7 +9,7 @@ title: VTECL - AngularJS
     {% for post in paginator.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
 		<p>
-		{{post.content}}
+		{{post.resume}}
 		</p>
 	{% endfor %}
   </ul>
