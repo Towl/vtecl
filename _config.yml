@@ -1,4 +1,5 @@
 name: VTECL - AngularJS
+description: Site de veille technologique sur AngularJS
 markdown: redcarpet
 pygments: false
 baseurl: /vtecl
