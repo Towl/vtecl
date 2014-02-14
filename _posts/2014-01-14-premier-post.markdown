@@ -7,4 +7,6 @@ resume: "Premier post de ce blog expliquant ses tenants et aboutissants"
 ---
 
 Ce blog est le résultat de mon travail pour le cours de veille technologique proposé par Centrale Lyon. Le sujet de cette veille est le framework
-AngularJS. 
+AngularJS.
+
+Ceci est un test.
