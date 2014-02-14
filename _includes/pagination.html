@@ -4,15 +4,17 @@
   {% if paginator.previous_page %}
     <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Précédent</a></li>
   {% endif %}
-
+  
   {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <li><em>{{ page }}</em><li>
+    <li>
+	{% if page == paginator.page %}
+      <a class="btn btn-lg btn-hover btn-default pageindex active" href="">{{ page }}</a>
     {% elsif page == 1 %}
-      <li><a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+      <a class="btn btn-lg btn-hover btn-default pageindex" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
     {% else %}
-      <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+      <a class="btn btn-lg btn-hover btn-default pageindex" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
     {% endif %}
+	</li>
   {% endfor %}
 
   {% if paginator.next_page %}

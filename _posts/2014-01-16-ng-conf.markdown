@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "NG-CONF !"
+date:   2014-01-16 19:50:28
+categories: ng-conf conference
+resume: "Quelques mots pour presenter les deux jours de conferences autour d'AngularJS"
+---
+
+De ?? le 16 Janvier 2014, jusqu'a ?? le 17 Janvier 2014 l'équipe de développement du framework
+AngularJS se sont réuni a Salt Lake City pour présenter leur produit lors d'une succession de
+conférence. Cette évenement est la Ng-conf. Le [site][ng-conf] officiel propose une désciption
+détaillée de l'évenement avec la liste des acteurs, le programme et les différents sujets qui
+seront traités.
+
+Aujourd'hui la ng-conf est terminée cependant des vidéos des différentes conférences ont été
+mises a disposition sur [YouTube][ng-youtube].
+
+
+[ng-conf]:http://www.ng-conf.org
+[ng-youtube]:http://www.youtube.com/user/ngconfvideos
