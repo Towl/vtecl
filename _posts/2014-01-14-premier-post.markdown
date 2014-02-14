@@ -6,5 +6,5 @@ categories: jekyll update
 resume: "Premier post de ce blog expliquant ses tenants et aboutissants"
 ---
 
-Ce blog est le résultat de mon travail pour le cours de veille technologique proposé par Centrale Lyon. Le sujet de cette veille est le framework
+Ce blog est le rÃ©sultat de mon travail pour le cours de veille technologique proposÃ© par Centrale Lyon. Le sujet de cette veille est le framework
 AngularJS. 
