@@ -4,3 +4,4 @@ markdown: redcarpet
 pygments: false
 baseurl: /vtecl
 paginate: 2
+excerpt_separator: <!-- resume -->
