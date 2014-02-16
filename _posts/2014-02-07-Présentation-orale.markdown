@@ -11,5 +11,5 @@ parvenir à un résultat satisfaisant dans les temps.
 
 Ma [présentation][presentation] a été réalisée avec le framework [impress.js][impress], tant qu'à travailler sur des frameworks javascript autant en utiliser.
 
-[presentation]: {{site.baseurl}}/presentation/presentation.html
+[presentation]: {{site.baseurl}}/Presentation/presentation.html#/accueil
 [impress]: https://github.com/bartaz/impress.js
