@@ -3,7 +3,6 @@ layout: post
 title:  "NG-CONF !"
 date:   2014-01-16 19:50:28
 categories: ng-conf conference
-resume: "Quelques mots pour presenter les deux jours de conferences autour d'AngularJS"
 ---
 
 De ?? le 16 Janvier 2014, jusqu'a ?? le 17 Janvier 2014 l'équipe de développement du framework
