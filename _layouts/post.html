@@ -3,16 +3,13 @@ layout: default
 ---
 <div class="container">
   <div class="blog-header">
-	<h1 class="blog-title">{{ page.title }}</h1>
-	<p class="blog-post-meta">{{ page.date | date_to_string }}</p>
+	<h1 class="blog-title">{{ site.title }}</h1>
   </div>
   <div class="row">
 	<div class="col-sm-8 blog-main">
-		<h2 class="blog-post-title">Test</h2>
+		<h2 class="blog-post-title">{{ page.title }}</h2>
+		<p class="blog-post-meta">{{ page.date | date_to_string }}</p>
 		<div class="post">
-			<div class="resume">
-				{{page.resume}}
-			</div>
 			<div class="content">
 				{{content}}
 			</div>
