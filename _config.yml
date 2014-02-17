@@ -3,5 +3,5 @@ description: Site de veille technologique sur AngularJS
 markdown: redcarpet
 pygments: false
 baseurl: /vtecl
-paginate: 2
+paginate: 5
 excerpt_separator: <!--more-->
