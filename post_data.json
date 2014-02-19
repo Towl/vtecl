@@ -1,0 +1,23 @@
+---
+layout: none
+---
+{
+	"posts":[
+		{% for post in site.posts %}{
+			"title":"{{post.title}}",
+			"date":"{{post.date | date_to_string}}",
+			"url":"{{site.baseurl}}{{post.url}}",
+			"resume":"{{post.resume}}",
+			"tags":"{{post.tag}}"
+		},
+		{% endfor %}{"title":""}
+	],
+	"tags":["all"
+	{% for post in site.posts %},"{{post.tag}}"
+	{% endfor %}
+	],
+	"months":["all"
+	{% for post in site.posts %},"{{post.date | date_to_string}}"
+	{% endfor %}
+	]
+}

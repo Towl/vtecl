@@ -3,14 +3,26 @@ layout: index_layout
 title: VTECL - AngularJS
 ---
 
-<div id="home">
+<div id="home" data-ng-controller="IndexController" >
   <h1>Blog Posts</h1>
+  <div class="filters">
+	<span class="filters-title">Filtres : </span><br/>
+	<span class="filter">Mois : </span>
+	<select data-ng-model="selectedMonth" data-ng-options="m for m in months"></select>
+	<span class="filter">Catégorie : </span>
+	<select data-ng-model="selectedTag" data-ng-options="t for t in tags"></select>
+  </div>
+  Selection : {[{selectedMonth}]} et {[{selectedTag}]}
   <ul class="posts">
-    {% for post in paginator.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
-		<p>
-		{{ post.excerpt }}
-		</p>
-	{% endfor %}
+	<div data-ng-repeat="post in posts">
+		<div data-ng-if="isConcerned(post)">
+			<li>
+				<span>{[{ post.date}]}</span> &raquo; <a href="{[{ post.url }]}">{[{ post.title }]}</a>
+				<p>
+				{[{ post.resume }]}
+				</p>
+			</li>
+		</div>
+	</div>
   </ul>
 </div>

@@ -2,7 +2,7 @@
 layout: post
 title:  "Des modules ! Des modules !"
 date:   2014-01-20 19:50:28
-categories: jekyll update
+tag: modules
 ---
 
 Basé sur une conception MVC (ajouté un lien wiki?) le framework AngularJS propose la possibilité aux développeur de créer des modules externe complémentaire

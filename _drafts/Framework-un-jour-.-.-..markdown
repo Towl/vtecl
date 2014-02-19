@@ -1,6 +1,7 @@
 ---
 layout: post
-categorie: base
+tag: base
+resume: "AngularJS est un framework. Mais qu'est ce qu'un framework?"
 ---
 
 Comme il a été dit dans plusieurs posts précédent, AngularJS un framework comme il en existe beaucoup d'autre sur le net, mais qu'est-ce qu'un framework?
