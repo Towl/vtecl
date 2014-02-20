@@ -84,6 +84,7 @@ h6, .h6 {
 .blog-header {
   padding-top: 20px;
   padding-bottom: 20px;
+  text-align:center;
 }
 .blog-title {
   margin-top: 30px;
@@ -107,9 +108,15 @@ h6, .h6 {
 }
 
 /* Sidebar modules for boxing content */
+.blog-sidebar{
+	padding-top: 20px;
+}
+
 .sidebar-module {
   padding: 15px;
   margin: 0 -15px 15px;
+  border-top: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
 }
 .sidebar-module-inset {
   padding: 15px;

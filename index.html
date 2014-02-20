@@ -4,12 +4,18 @@ title: accueil
 nav: navAccueil
 ---
 <div class="container">
-	<div class="row" data-ng-app="blogvtecl">
-		<div class="blog-header">
+	<div class="row">
+		<div class="col-sm-7 blog-header">
 			<h1 class="blog-title">{{ site.name }}</h1>
 			<p class="lead blog-description">{{ site.description }}</p>
 		</div>
-		<div class="col-sm-6 blog-main">
+		<div class="col-sm-5">
+			<!-- block vide pour assurer l'alignement du titre avec le block de dessous -->
+			<!-- Emplacement parfait pour un logo ou deux ! -->
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-7 blog-main">
 			<p>
 				Présentation...
 			</p>
