@@ -1,0 +1,46 @@
+---
+layout: default_layout
+title: Archives
+nav: navBlogs
+---
+
+<!-- Début de l'index -->
+
+<!-- Utilisation d'AngularJS pour la construction de la liste des blogs archivés et filtrés -->
+<div class="container">
+	<div class="row" data-ng-app="blogvtecl">
+		<div class="col-sm-12 blog-main">
+			<div id="home" data-ng-controller="IndexController" >
+			  <h1>Archives</h1>
+			  <!-- Filtre des archives (à mettre en side bar) -->
+			  <div class="filters">
+				<span class="filters-title">Filtres : </span><br/>
+				<span class="filter">Mois : </span>
+				<select data-ng-model="selectedMonth" data-ng-options="m for m in months"></select>
+				<span class="filter">Catégorie : </span>
+				<select data-ng-model="selectedTag" data-ng-options="t for t in tags"></select>
+			  </div>
+			  <!-- Fin du filtre -->
+			  <!-- Affichage du filtre selectionné -->
+			  Filtres : {[{selectedMonth}]} et {[{selectedTag}]}
+			  
+			  <!-- Liste des archives filtrées -->
+			  <ul class="posts">
+				<div data-ng-repeat="post in posts">
+					<div data-ng-if="isConcerned(post)">
+						<li>
+							<span>{[{ post.date}]}</span> &raquo; <a href="{[{ post.url }]}">{[{ post.title }]}</a>
+							<p>
+							{[{ post.resume }]}
+							</p>
+						</li>
+					</div>
+				</div>
+			  </ul>
+			  <!-- Fin de la liste -->
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Fin de l'index -->

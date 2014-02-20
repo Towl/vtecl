@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -18,15 +18,22 @@
 
     </head>
     <body>
-		{% include navbar.html param=page.nav %}
-		{{content}}
-		{% include footer.html %}
+
+{% include navbar.html param=page.nav %}
+
+<!-- Début du block principal -->
+
+{{content}}		
+
+<!-- Fin du block principal -->
+
+{% include footer.html %}
+
 		<script type="text/javascript" src="{{site.baseurl}}/js/googlebadge.js"></script>
 		<script type="text/javascript" src="{{site.baseurl}}/js/googleanalytics.js"></script>
 		<script type="text/javascript" src="{{site.baseurl}}/js/angular.min.js"></script>
 		<script type="text/javascript" src="{{site.baseurl}}/js/firebase.js"></script>
 		<script type="text/javascript" src="{{site.baseurl}}/js/angularfire.min.js"></script>
-		<script type="text/javascript" src="{{site.baseurl}}/js/jquery.js"></script>
 		<script type="text/javascript" src="{{site.baseurl}}/js/controllers.js"></script>
     </body>
 </html>

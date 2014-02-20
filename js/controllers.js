@@ -55,7 +55,7 @@ blogIndexApp.controller('IndexController',function ($scope, $http){
 		});
 	}
 	
-	$http.get('./post_data.json').success(function(data){
+	$http.get('./data/posts.json').success(function(data){
 		$scope.posts = getPosts(data.posts);
 		$scope.tags = sortTags(data.tags);
 		$scope.months = getMonths(data.months);

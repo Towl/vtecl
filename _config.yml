@@ -4,4 +4,3 @@ markdown: redcarpet
 encoding: UTF-8
 pygments: false
 baseurl: /vtecl
-excerpt_separator: .

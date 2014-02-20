@@ -1,7 +1,9 @@
 ---
 layout: post
-tag: blog
-resume: "Petit post pour la mise en ligne de ce site"
+title: "Mise en ligne !"
+resume: "Mise en ligne officiel de ce blog de présentation de ma veille technologique sur AngularJS."
+tag: Blog
 ---
 
-Après quelques semaines de travail irrégulier, mon site de veille technologique est suffisement abouti pour être mis en ligne aux yeux de tous.
+Après quelques semaines de travail irrégulier, mon site de veille technologique est suffisement abouti pour être mis en ligne aux yeux de tous. C'est ici 
+que ce trouve(ra) toutes les informations et les liens utiles consernant ma veille technologique. 

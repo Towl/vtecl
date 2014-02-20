@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "AngularJS en deux mots"
-date:   2014-01-16 19:50:28
-tag: jekyll update
+resume: "Le minimum pour comprendre l'intérêt d'AngularJS et ses principes."
+tag: AngularJS
 ---
 
 AngularJS est un [framework][framework] créer par google qui a la vocation de simplifier l'utilisation du javascript pour la création d'application web.
