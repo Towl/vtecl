@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post_layout
 title:  "Start !"
 resume: "Le premier poste pour resitué les objectifs et le contexte de construction de ce blog."
 tag: Blog

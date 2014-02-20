@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post_layout
 title: "Accolades conflictuelles"
 resume: "Il existe d'autres frameworks qui utilisent les doubles accolades pour insérer leur syntaxe. AngularJS fournis un outils pour contourner ce problème."
 tag: Astuce AngularJS

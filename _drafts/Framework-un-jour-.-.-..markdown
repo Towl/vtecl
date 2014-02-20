@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post_layout
 title: "Une histoire de framework."
 resume: "AngularJS est un framework. Mais qu'est ce qu'un framework?"
 tag: Base Javascript

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post_layout
 title: "Mise en ligne !"
 resume: "Mise en ligne officiel de ce blog de présentation de ma veille technologique sur AngularJS."
 tag: Blog

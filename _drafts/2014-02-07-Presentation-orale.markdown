@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post_layout
 title: "Présentation orale"
 resume: "Présentation orale de mon sujet et de mes démarches de veille technologique."
 tag: Presentation

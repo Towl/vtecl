@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post_layout
 title:  "Des modules ! Des modules !"
 resume: "AngularJS c'est beaucoup de morceaux qui s'assemblent et se reproduisent."
 tag: AngularJS Module Javascript

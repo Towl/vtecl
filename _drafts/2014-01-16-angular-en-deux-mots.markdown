@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post_layout
 title:  "AngularJS en deux mots"
 resume: "Le minimum pour comprendre l'intérêt d'AngularJS et ses principes."
 tag: AngularJS

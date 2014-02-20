@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post_layout
 title: "Le javascript en un mots."
 resume: "Un post pour expliquer les bases du javascript nécessaire à la compréhension de la suite"
 tag: Base

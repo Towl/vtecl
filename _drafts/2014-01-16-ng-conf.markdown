@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post_layout
 title:  "NG-CONF-2014!"
 resume: "Deux jours de conférences tenues par les développeurs d'AngularJS et leurs collaborateurs pour parler de leur produit."
 tag: Ng-Conf AngularJS
