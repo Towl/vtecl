@@ -2,16 +2,20 @@
 layout: default_layout
 title: accueil
 nav: navAccueil
+css: ['bootstrap.min','bootstrap-theme.min','main','index']
+scripts: ['googlebadge','googleanalytics']
 ---
 <div class="container">
-	<div class="row">
-		<div class="col-sm-7 blog-header">
+	<div class="row index-header">
+		<div class="col-sm-3 logo">
+			<a href="http://www.ec-lyon.fr"><img src="{{site.baseurl}}/data/images/logoecl.jpg" alt="Logo Ecole Centrale Lyon"/></a>
+		</div>
+		<div class="col-sm-6 blog-header">
 			<h1 class="blog-title">{{ site.name }}</h1>
 			<p class="lead blog-description">{{ site.description }}</p>
 		</div>
-		<div class="col-sm-5">
-			<!-- block vide pour assurer l'alignement du titre avec le block de dessous -->
-			<!-- Emplacement parfait pour un logo ou deux ! -->
+		<div class="col-sm-3 logo">
+			<a href="http://www.angularjs.org"><img src="{{site.baseurl}}/data/images/AngularJS.svg" alt="Logo AngularJS"/></a>
 		</div>
 	</div>
 	<div class="row">
