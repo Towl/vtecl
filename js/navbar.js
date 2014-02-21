@@ -4,6 +4,6 @@
 	var itemactive = document.getElementById(blogspan[0].className);
 	if(itemactive != null){
 		var classe = itemactive.className + " active";
+		itemactive.className = classe;
 	}
-	itemactive.className = classe;
 })();

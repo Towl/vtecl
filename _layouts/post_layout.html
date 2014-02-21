@@ -1,19 +1,24 @@
 ---
 layout: default_layout
-css: ['bootstrap.min','bootstrap-theme.min','main']
-scripts: ['googleanalytics']
+css: ['bootstrap.min','bootstrap-theme.min','main','comments']
+scripts: ['googleanalytics','jquery','jquery.charcounter','angular.min','firebase','angularfire.min','comment','comment.controllers','comment.service.firebase','config']
 ---
 <div class="container">
-  <div class="row">
-	<div class="col-sm-12 blog-main">
-		<h2 class="blog-post-title">{{ page.title }}</h2>
-		<p class="blog-post-meta">{{ page.date | date_to_string }}</p>
-		<div class="post">
-			<div class="content">
-				{{content}}
+	<!-- Post content -->
+	<div class="row">
+		<div class="col-sm-12 blog-main">
+			<h2 class="blog-post-title">{{ page.title }}</h2>
+			<p class="blog-post-meta">{{ page.date | date_to_string }}</p>
+			<div class="post">
+				<div class="content">
+					{{content}}
+				</div>
 			</div>
 		</div>
 	</div>
-  </div>
+  <!-- End post content -->
+
+  {% include comments.html param=page.title %}
+
 </div>
 
