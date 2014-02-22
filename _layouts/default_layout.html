@@ -15,7 +15,9 @@
 {{content}}		
 <!-- Fin du block principal -->
 
+{% if page.footer %}
 {% include footer.html %}
+{% endif %}
 
 <!-- Début du block de scripts -->
 {% for script in page.scripts %}<script type="text/javascript" src="{{site.baseurl}}/js/{{script}}.js"></script>

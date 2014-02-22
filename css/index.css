@@ -1,4 +1,22 @@
 .index-header{
+	padding-top:20px;
+	padding-bottom:10px;
+	background-color: white;
+	box-shadow: 5px 5px 5px #000000;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.index-summary{
 	margin-top:20px;
-	margin-bottom:20px;
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align:center;
+	background-color:#eeeeee;
+	box-shadow: 5px 5px 5px #000000;
+	border-radius: 20px;
+}
+
+.left-list{
+	text-align:left;
 }

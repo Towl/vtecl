@@ -2,15 +2,16 @@
 layout: default_layout
 title: Archives
 nav: navBlogs
-css: ['bootstrap.min','bootstrap-theme.min','main']
-scripts: ['googleanalytics','angular.min','indexcontroler']
+css: ['bootstrap.min','bootstrap-theme.min','main','footer']
+scripts: ['navbar','googleanalytics','angular.min','indexcontroler']
+footer: true
 ---
 
 <!-- Début de l'index -->
 <!-- Utilisation d'AngularJS pour la construction de la liste des blogs archivés et filtrés -->
 <div class="container" data-ng-app="blogvtecl">
 	<div class="row" data-ng-controller="IndexController">
-		<div class="col-sm-9 blog-main">
+		<div class="col-sm-9 blog-main main-content">
 			<h1>Archives</h1>
 			<!-- Liste des archives filtrées -->
 			<ul class="posts">
