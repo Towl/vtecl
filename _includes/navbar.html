@@ -3,16 +3,23 @@
 
 <div class="blog-masthead">
 	<div class="container">
-		<nav class="blog-nav">
-			<span class="{{include.param}}"></span>
-			<a id="navAccueil" class="blog-nav-item" href="{{site.baseurl}}/index.html">Accueil</a>
-			<a id="navBlogs" class="blog-nav-item" href="{{site.baseurl}}/blogs.html">Blogs</a>
-			<a class="blog-nav-item" href="{{site.baseurl}}/feed.xml">RSS</a>
-			<a id="navVeille" class="blog-nav-item" href="{{site.baseurl}}/veille.html">Veille</a>
-			<a class="blog-nav-item" href="{{site.baseurl}}/presentation/index.html#/accueil">Slides</a>
-			<!--a id="navForum" class="blog-nav-item" href="{{site.baseurl}}/comment.html">Forum</a-->
-			<!--a id="navBiblio" class="blog-nav-item" href="{{site.baseurl}}/biblio.html">Bibli</a-->
-		</nav>
+		<div class="row">
+			<div class="col-sm-8">
+				<nav class="blog-nav">
+					<span class="{{include.param}}"></span>
+					<a id="navAccueil" class="blog-nav-item" href="{{site.baseurl}}/index.html">Accueil</a>
+					<a id="navBlogs" class="blog-nav-item" href="{{site.baseurl}}/blogs.html">Blogs</a>
+					<!--a id="navVeille" class="blog-nav-item" href="{{site.baseurl}}/veille.html">Veille</a-->
+					<a class="blog-nav-item" href="{{site.baseurl}}/presentation/index.html#/accueil">Slides</a>
+					<!--a id="navTags" class="blog-nav-item" href="{{site.baseurl}}/tagcloud.html">Nuage</a-->
+					<!--a id="navForum" class="blog-nav-item" href="{{site.baseurl}}/comment.html">Forum</a-->
+					<!--a id="navBiblio" class="blog-nav-item" href="{{site.baseurl}}/biblio.html">Bibli</a-->
+				</nav>
+			</div>
+			<div class="col-sm-2 col-sm-offset-2 rss-btn">
+				<a href="{{site.baseurl}}/feed.xml"><img src="{{site.baseurl}}/data/images/rss.png" width="30" alt="RSS"/></a>
+			</div>
+		</div>
 	</div>
 </div>
 
