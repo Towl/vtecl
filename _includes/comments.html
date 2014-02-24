@@ -1,23 +1,23 @@
-<div id="commentaires" class="row comment-block" data-ng-app="commentApp">
-	<h3 id="{{include.param}}" class="comment-title">Commentaires :</h3>
-	<div class="col-sm-12 col-md-12" data-ng-controller="CommentCtrl">
-		<div class="panel panel-default">
-			<div class="panel-body">                
-				<form accept-charset="UTF-8">
-					<input class="" type="text" placeholder="Votre nom" data-ng-model="author"></input>
-					<textarea class="form-control counted" placeholder="Un commentaire ?" rows="4" data-ng-model="newMessage"></textarea>
-					<h6 class="pull-right" id="counter">characters remaining</h6>
-					<button id="post-comment-btn" class="btn btn-info" type="submit" data-ng-click="addMessage()">Poster !</button>
-				</form>
-			</div>
-		</div>
-		<ol id="messages" data-ng-show="messages">
-			<li data-ng-repeat="message in messages">
-				<span class="comment-date">{[{message.date}]}</span> &raquo; <span class="comment-author">{[{message.author}]} :</span><br/>
-				<p class="comment-content">
-					{[{message.text}]}
-				</p>
-			</li>
-		</ol>
-	</div>
-</div>
+			<div id="commentaires" class="row comment-block" data-ng-app="commentApp">
+				<h3 id="{{include.param}}" class="comment-title">Commentaires :</h3>
+				<div class="col-sm-12 col-md-12" data-ng-controller="CommentCtrl">
+					<div class="panel panel-default">
+						<div class="panel-body">                
+							<form accept-charset="UTF-8">
+								<input class="" type="text" placeholder="Votre nom" data-ng-model="author"></input>
+								<textarea class="form-control counted" placeholder="Un commentaire ?" rows="4" data-ng-model="newMessage"></textarea>
+								<h6 class="pull-right" id="counter">characters remaining</h6>
+								<button id="post-comment-btn" class="btn btn-info" type="submit" data-ng-click="addMessage()">Poster !</button>
+							</form>
+						</div>
+					</div>
+					<ol id="messages" data-ng-show="messages">
+						<li data-ng-repeat="message in messages">
+							<span class="comment-date">{[{message.date}]}</span> &raquo; <span class="comment-author">{[{message.author}]} :</span><br/>
+							<p class="comment-content">
+								{[{message.text}]}
+							</p>
+						</li>
+					</ol>
+				</div>
+			</div><!-- commentaires -->

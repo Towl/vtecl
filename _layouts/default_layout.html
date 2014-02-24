@@ -4,25 +4,45 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width"/>
 		<title>{{ page.title }}</title>
-{% for css in page.css %}
-		<link rel="stylesheet" href="{{ site.baseurl}}/css/{{css}}.css"/>{% endfor %}
+		
+		<link rel="stylesheet" href="{{site.baseurl}}/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="{{site.baseurl}}/css/main.css"/>
+		{% if page.footer %}<link rel="stylesheet" href="{{ site.baseurl}}/css/footer.css"/>{% endif %}
+		{% for css in page.css %}<link rel="stylesheet" href="{{ site.baseurl}}/css/{{css}}.css"/>
+		{% endfor %}
     </head>
     <body>
 
+		<!-- Début de la barre de navigation -->
+		
+{% if page.navbar %}
 {% include navbar.html param=page.nav %}
+{% endif %}
 
-<!-- Début du block principal -->
+		<!-- Fin de la barre de navigation -->
+		
+		<!-- Début du block principal -->
+		
 {{content}}		
-<!-- Fin du block principal -->
 
+		<!-- Fin du block principal -->
+
+		<!-- Début du footer -->
+		
 {% if page.footer %}
 {% include footer.html %}
 {% endif %}
 
-<!-- Début du block de scripts -->
-{% for script in page.scripts %}<script type="text/javascript" src="{{site.baseurl}}/js/{{script}}.js"></script>
-{% endfor %}
-<!-- Fin du block de scrips -->
+		<!-- Fin du footer -->
+
+		<!-- Début du block de scripts -->
+		
+		<script type="text/javascript" src="{{site.baseurl}}/js/googleanalytics.js"></script>
+		{% if page.navbar %}<script type="text/javascript" src="{{site.baseurl}}/js/navbar.js"></script>{%endif%}
+		{% for script in page.scripts %}<script type="text/javascript" src="{{site.baseurl}}/js/{{script}}.js"></script>
+		{% endfor %}
+		
+		<!-- Fin du block de scrips -->
 
     </body>
 </html>

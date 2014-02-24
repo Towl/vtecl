@@ -2,43 +2,43 @@
 layout: default_layout
 title: accueil
 nav: navAccueil
-css: ['bootstrap.min','bootstrap-theme.min','main','index','footer']
-scripts: ['navbar','googlebadge','googleanalytics']
+css: ['index']
+scripts: ['googlebadge']
+navbar: true
 footer: true
 ---
-<div class="container">
-	<div class="row page-title">
-		<div class="col-sm-3 logo">
-			<a href="http://www.ec-lyon.fr"><img src="{{site.baseurl}}/data/images/logoecl.jpg" alt="Logo Ecole Centrale Lyon"/></a>
+		<div class="container">
+			<div class="row page-title">
+				<div class="col-sm-3 logo">
+					<a href="http://www.ec-lyon.fr"><img src="{{site.baseurl}}/data/images/logoecl.jpg" alt="Logo Ecole Centrale Lyon"/></a>
+				</div>
+				<div class="col-sm-6 blog-header">
+					<h1 class="blog-title">{{ site.name }}</h1>
+					<p class="lead blog-description">{{ site.description }}</p>
+				</div>
+				<div class="col-sm-3 logo">
+					<a href="http://www.angularjs.org"><img src="{{site.baseurl}}/data/images/AngularJS.svg" alt="Logo AngularJS"/></a>
+				</div>
+			</div>
 		</div>
-		<div class="col-sm-6 blog-header">
-			<h1 class="blog-title">{{ site.name }}</h1>
-			<p class="lead blog-description">{{ site.description }}</p>
-		</div>
-		<div class="col-sm-3 logo">
-			<a href="http://www.angularjs.org"><img src="{{site.baseurl}}/data/images/AngularJS.svg" alt="Logo AngularJS"/></a>
-		</div>
-	</div>
-</div>
 
-<div class="container index-summary">
-	<div class="row">
-		<div class="col-sm-4">
-			<h4>Auteur</h4>
-			<div class="g-person" data-width="273" data-href="//plus.google.com/104708481789266458099" data-layout="landscape" data-rel="author"></div>
-		</div>
-		<div class="col-sm-4">
-			<h4>Derniers posts</h4>
-			<h6>{{include.param}}</h6>
-			<ol class="list-unstyled left-list">
-				{% for post in site.posts limit:5 %}
-				<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
-				{% endfor %}
-			</ol>
-		</div>
-		<div class="col-sm-4">
-			<h4>Posts populaires</h4>
-			<em>Bientôt</em>
-		</div>
-	</div><!-- row -->
-</div><!-- container -->
+		<div class="container index-summary">
+			<div class="row">
+				<div class="col-sm-4">
+					<h4>Auteur</h4>
+					<div class="g-person" data-width="273" data-href="//plus.google.com/104708481789266458099" data-layout="landscape" data-rel="author"></div>
+				</div>
+				<div class="col-sm-4">
+					<h4>Derniers posts</h4>
+					<h6>{{include.param}}</h6>
+					<ol class="list-unstyled left-list">
+						{% for post in site.posts limit:5 %}<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+						{% endfor %}
+					</ol>
+				</div>
+				<div class="col-sm-4">
+					<h4>Posts populaires</h4>
+					<em>Bientôt</em>
+				</div>
+			</div><!-- row -->
+		</div><!-- container -->

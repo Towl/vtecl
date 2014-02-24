@@ -2,55 +2,52 @@
 layout: default_layout
 title: Archives
 nav: navBlogs
-css: ['bootstrap.min','bootstrap-theme.min','main','footer']
-scripts: ['navbar','googleanalytics','angular.min','indexcontroler']
+css: ['blogs']
+scripts: ['angular.min','indexcontroler']
+navbar: true
 footer: true
 ---
-
-<!-- Début de l'index -->
-<!-- Utilisation d'AngularJS pour la construction de la liste des blogs archivés et filtrés -->
-<div class="container" data-ng-app="blogvtecl">
-	<div class="row">
-		<div class="col-sm-4 page-title">
-			<h1>Archives</h1>
-		</div>
-	</div>
-	<div class="row" data-ng-controller="IndexController">
-		<div class="col-sm-9 blog-main main-content">
-			<!-- Liste des archives filtrées -->
-			<ul class="posts">
-				<div data-ng-repeat="post in posts">
-					<div data-ng-if="isConcerned(post)">
-						<li>
-							<em>{[{ post.date}]}</em> &raquo; <a class="blog-index-title" href="{[{ post.url }]}">{[{ post.title }]}</a>
-							<p class="blog-post-meta">
-							{[{ post.resume }]}
-							</p>
-						</li>
-					</div>
-				</div>
-			</ul>
-			<!-- Fin de la liste -->
-		</div>
-		<!-- Début sidebar -->
-		<div class="col-sm-2 col-sm-offset-1 blog-sidebar">
-			<!-- Filtre des archives -->
-			<div class="filters">
-				<h3 class="filters-title">Filtres</h3>
-				<div class="sidebar-module">
-					<h4>Date</h4>
-					<ol class="list-unstyled"></ol>
-					<select data-ng-model="selectedMonth" data-ng-options="m for m in months"></select>
-				</div>
-				<div class="sidebar-module">
-					<h4>Tags</h4>
-					<select data-ng-model="selectedTag" data-ng-options="t for t in tags"></select>
+		<div class="container" data-ng-app="blogvtecl">
+			<div class="row">
+				<div class="col-sm-4 page-title">
+					<h1>Archives</h1>
 				</div>
 			</div>
-			<!-- Fin du filtre -->
-			Filtres : {[{selectedMonth}]} et {[{selectedTag}]}
-		</div>
-		<!-- Fin sidebar -->
-	</div><!-- IndexController -->
-</div><!-- Angular application : blogvtecl -->
-<!-- Fin de l'index -->
+			<div class="row" data-ng-controller="IndexController">
+				<div class="col-sm-9 blog-main main-content">
+					<!-- Liste des archives filtrées -->
+					<ul class="posts">
+						<div data-ng-repeat="post in posts">
+							<div data-ng-if="isConcerned(post)">
+								<li>
+									<em>{[{ post.date}]}</em> &raquo; <a class="blog-index-title" href="{[{ post.url }]}">{[{ post.title }]}</a>
+									<p class="blog-post-meta">
+									{[{ post.resume }]}
+									</p>
+								</li>
+							</div>
+						</div>
+					</ul>
+					<!-- Fin de la liste -->
+				</div>
+				<!-- Début sidebar -->
+				<div class="col-sm-2 col-sm-offset-1 blog-sidebar">
+					<!-- Filtre des archives -->
+					<div class="filters">
+						<h3 class="filters-title">Filtres</h3>
+						<div class="sidebar-module">
+							<h4>Date</h4>
+							<ol class="list-unstyled"></ol>
+							<select data-ng-model="selectedMonth" data-ng-options="m for m in months"></select>
+						</div>
+						<div class="sidebar-module">
+							<h4>Tags</h4>
+							<select data-ng-model="selectedTag" data-ng-options="t for t in tags"></select>
+						</div>
+					</div>
+					<!-- Fin du filtre -->
+					Filtres : {[{selectedMonth}]} et {[{selectedTag}]}
+				</div>
+				<!-- Fin sidebar -->
+			</div><!-- IndexController -->
+		</div><!-- Angular application : blogvtecl -->
