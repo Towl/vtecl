@@ -1,23 +1,40 @@
-			<div id="commentaires" class="row comment-block" data-ng-app="commentApp">
-				<h3 id="{{include.param}}" class="comment-title">Commentaires :</h3>
-				<div class="col-sm-12 col-md-12" data-ng-controller="CommentCtrl">
-					<div class="panel panel-default">
-						<div class="panel-body">                
-							<form accept-charset="UTF-8">
-								<input class="" type="text" placeholder="Votre nom" data-ng-model="author"></input>
-								<textarea class="form-control counted" placeholder="Un commentaire ?" rows="4" data-ng-model="newMessage"></textarea>
-								<h6 class="pull-right" id="counter">characters remaining</h6>
-								<button id="post-comment-btn" class="btn btn-info" type="submit" data-ng-click="addMessage()">Poster !</button>
-							</form>
+			<div class="row">
+				<div id="commentaires" class="col-sm-9 comment-block" data-ng-app="commentApp">
+					<h3 id="{{include.param}}" class="comment-title">Commentaires</h3>
+					<div class="comment-control" data-ng-controller="CommentCtrl">
+						<div class="panel panel-default">
+							<div class="panel-body">                
+								<form class="form-horizontal" role="form" accept-charset="UTF-8">
+									<div class="form-group">
+										<div class="col-sm-4">
+											<input class="form-control" type="text" placeholder="Votre nom" data-ng-model="author"></input>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-sm-12">
+											<textarea class="form-control counted" placeholder="Un commentaire ?" rows="4" data-ng-model="newMessage"></textarea>
+											<button id="post-comment-btn" class="btn btn-success" type="submit" data-ng-click="addMessage()">Poster !</button>
+											<h6 class="pull-right" id="counter">characters remaining</h6>
+										</div>
+									</div>
+								</form>
+							</div>
 						</div>
+						<ol id="messages" class="list-unstyled" data-ng-show="messages">
+							<li data-ng-repeat="message in messages">
+								<div class="row comment-list">
+									<div class="col-sm-3 comment-header">
+										<span class="comment-author pull-right">{[{message.author}]} :</span><br/>
+										<span class="comment-date pull-right"><em>{[{message.date}]}</em></span>
+									</div>
+									<div class="col-sm-8 comment-content">
+										<p>
+											{[{message.text}]}
+										</p>
+									</div>
+								</div>
+							</li>
+						</ol>
 					</div>
-					<ol id="messages" data-ng-show="messages">
-						<li data-ng-repeat="message in messages">
-							<span class="comment-date">{[{message.date}]}</span> &raquo; <span class="comment-author">{[{message.author}]} :</span><br/>
-							<p class="comment-content">
-								{[{message.text}]}
-							</p>
-						</li>
-					</ol>
-				</div>
-			</div><!-- commentaires -->
+				</div><!-- commentaires -->
+			</div><!-- row -->

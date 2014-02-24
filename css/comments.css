@@ -1,5 +1,43 @@
 .comment-block{
 	margin-top:20px;
-	padding-top:20px;
-	border-top: 1px solid #e5e5e5;
+	padding-top:10px;
+	background-color:#eeeeff;
+	box-shadow: 5px 5px 5px #000000;
+	border-radius:20px;
+}
+
+#post-comment-btn{
+	margin-top:10px;
+	
+}
+
+.comment-title{
+	margin-left:20px;
+}
+
+.comment-list{
+	margin-top:10px;
+	margin-bottom:5px;
+	border-top: 1px solid #aaaaaa;
+}
+
+.comment-header{
+	margin-right:0px;
+	margin-left:5px;
+	padding-top:5px;
+	padding-left:10px;
+	padding-bottom:5px;/*
+	background-color:#efeeee;
+	box-shadow: inset 2px 2px 5px #000000;
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;*/
+}
+
+.comment-content{
+	padding-left:10px;
+	padding-bottom:5px;
+	background-color:#eeefee;/*$
+	box-shadow: inset 2px 2px 5px #000000;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;*/
 }
