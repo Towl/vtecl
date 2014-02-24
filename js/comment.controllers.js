@@ -9,11 +9,11 @@ angular.module('commentApp.controllers',['commentApp.service.firebase','commentA
 		function getNowDate(){
 			var now = new Date();
 			var thisYear = now.getFullYear();
-			var thisMonth = now.getMonth();
-			var thisDay = now.getDate();
-			var thisHour = now.getHours();
-			var thisMinute = now.getMinutes();
-			var dateString = thisYear+'-'+thisMonth+'-'+thisDay+' '+thisHour+'h'+thisMinute;
+			var thisMonth = ("0" + (now.getMonth()+1)).slice(-2);
+			var thisDay = ("0" + now.getDate()).slice(-2);
+			var thisHour = ("0" + now.getHours()).slice(-2);
+			var thisMinute = ("0" + now.getMinutes()).slice(-2);
+			var dateString = thisYear+'-'+thisMonth+'-'+thisDay+'  '+thisHour+'h'+thisMinute;
 			return dateString;
 		};
 		$scope.date = getNowDate();

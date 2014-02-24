@@ -30,7 +30,9 @@
 }
 .blog-post-meta {
   margin-bottom: 20px;
+  padding-right:30px;
   color: #999;
+  text-align:justify;
 }
 .blog-index-title{
 	font-size:28px;

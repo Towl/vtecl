@@ -37,16 +37,21 @@ footer: true
 						<h3 class="filters-title">Filtres</h3>
 						<div class="sidebar-module">
 							<h4>Date</h4>
-							<ol class="list-unstyled"></ol>
-							<select data-ng-model="selectedMonth" data-ng-options="m for m in months"></select>
+							<form class="forizontal-form" role="form">
+								<div data-ng-repeat="m in months">
+									<input type="checkBox" data-ng-model="m.checked"/><span> {[{m.name}]}</span>
+								</div>
+							</form>
 						</div>
 						<div class="sidebar-module">
 							<h4>Tags</h4>
-							<select data-ng-model="selectedTag" data-ng-options="t for t in tags"></select>
+							<form class="horizontal-form" role="form">
+								<div data-ng-repeat="t in tags">
+									<input type="checkBox" data-ng-model="t.checked"/><span> {[{t.name}]}</span>
+								</div>
+							</form>
 						</div>
 					</div>
-					<!-- Fin du filtre -->
-					Filtres : {[{selectedMonth}]} et {[{selectedTag}]}
 				</div>
 				<!-- Fin sidebar -->
 			</div><!-- IndexController -->

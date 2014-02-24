@@ -9,22 +9,6 @@ blogIndexApp.config(function($interpolateProvider){
 
 blogIndexApp.controller('IndexController',function ($scope, $http){
 		
-	function sortTags(datatags){
-		var cache = {};
-		var redondTags = [];
-		var k = 0;
-		for(var i = 0, maxData = datatags.length;i<maxData;i++){
-			var tags = datatags[i].split(' ');
-			for(var j = 0, maxTags = tags.length;j<maxTags;j++){
-				redondTags[k] = tags[j];
-				k++;
-			}
-		}
-		return redondTags.filter(function(elem,index,array){
-			return cache[elem]?0:cache[elem]=1;
-		});
-	}
-	
 	function getPosts(dataposts){
 		var posts = [];
 		var k = 0;
@@ -37,17 +21,31 @@ blogIndexApp.controller('IndexController',function ($scope, $http){
 		return posts;
 	}
 	
+	function getTags(datatags){
+		var cache = {};
+		var redondTags = [];
+		var k = 0;
+		for(var i = 0, maxData = datatags.length;i<maxData;i++){
+			var tags = datatags[i].split(' ');
+			for(var j = 0, maxTags = tags.length;j<maxTags;j++){
+				redondTags[k] = {
+					name:tags[j],
+					checked:true};
+				k++;
+			}
+		}
+		return redondTags.filter(function(elem,index,array){
+			return cache[elem.name]?0:cache[elem.name]=1;
+		});
+	}
+	
 	function getMonths(datamonths){
 		var redondMonths = [];
 		var k = 0;
-		redondMonths[k] = datamonths[0];
-		k++;
-		for(var i = 1, maxData = datamonths.length;i<maxData;i++){
-			var splitedDate = datamonths[i].split(' ');
-			if(splitedDate.length>0){
-				redondMonths[k] = splitedDate[1];
-				k++;
-			}
+		for(var i = 0, maxData = datamonths.length;i<maxData;i++){
+			redondMonths[i] = {
+				name:datamonths[i],
+				checked:true};
 		}
 		var cache = {};
 		return redondMonths.filter(function(elem,index,array){
@@ -57,20 +55,31 @@ blogIndexApp.controller('IndexController',function ($scope, $http){
 	
 	$http.get('./data/posts.json').success(function(data){
 		$scope.posts = getPosts(data.posts);
-		$scope.tags = sortTags(data.tags);
+		$scope.tags = getTags(data.tags);
 		$scope.months = getMonths(data.months);
-		$scope.selectedTag = $scope.tags[0];
 		$scope.selectedMonth = 'all';
 	});
 	
+	function isTagged(tags){
+		for(var i = 0, nbTags = $scope.tags.length; i < nbTags; i++){
+			if($scope.tags[i].checked){
+				if(tags.indexOf($scope.tags[i].name)>=0){return true;}
+			}
+		}
+		return false;
+	}
+	
+	function isInDate(date){
+		for(var i = 0, nbMonths = $scope.months.length; i < nbMonths; i++){
+			if($scope.months[i].checked){
+				if(date.indexOf($scope.months[i])){return true;}
+			}
+		}
+	}
+	
 	$scope.isConcerned = function(post){
-		if($scope.selectedTag != 'all'){
-			if(post.tags.split(' ').indexOf($scope.selectedTag)<0){return false;}
-		}
-		if ($scope.selectedMonth != 'all'){
-			var postMonth = post.date.split(' ');
-			if(postMonth[1] != $scope.selectedMonth){return false;}
-		}
+		if(!isTagged(post.tags)){return false;}
+		if(!isInDate(post.date)){return false;}
 		return true;
 	};
 });

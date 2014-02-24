@@ -34,8 +34,10 @@
 }
 
 .comment-content{
+	padding-top:5px;
 	padding-left:10px;
 	padding-bottom:5px;
+	text-align:justify;
 	background-color:#eeefee;/*$
 	box-shadow: inset 2px 2px 5px #000000;
 	border-top-right-radius:10px;
