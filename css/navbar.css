@@ -1,0 +1,45 @@
+.blog-masthead {
+  background-color: #666666;
+  box-shadow: 0 5px 5px #000000;
+}
+
+.blog-nav {
+
+}
+
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #cdddeb;
+}
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+  color: #fff;
+}
+.blog-nav .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  content: " ";
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  border-right:  5px solid transparent;
+  border-left:   5px solid transparent;
+  border-bottom: 5px solid;
+}
+
+.rss-btn{
+	text-align:right;
+	margin-top:5px;
+}

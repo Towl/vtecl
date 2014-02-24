@@ -1,0 +1,12 @@
+.sidebar{
+	background-color:#eeeeee;
+	box-shadow: 5px 5px 5px #000000;
+	border-radius: 20px;
+}
+
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+  border-top: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+}
