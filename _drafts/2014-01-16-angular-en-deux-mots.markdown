@@ -2,7 +2,7 @@
 layout: post_layout
 title:  "AngularJS en deux mots"
 resume: "Le minimum pour comprendre l'intérêt d'AngularJS et ses principes."
-tag: AngularJS
+tags: ['AngularJS']
 ---
 
 AngularJS est un [framework][framework] créer par google qui a la vocation de simplifier l'utilisation du javascript pour la création d'application web.

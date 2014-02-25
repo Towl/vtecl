@@ -22,18 +22,13 @@ blogIndexApp.controller('IndexController',function ($scope, $http){
 	}
 	
 	function getTags(datatags){
-		var cache = {};
 		var redondTags = [];
-		var k = 0;
 		for(var i = 0, maxData = datatags.length;i<maxData;i++){
-			var tags = datatags[i].split(' ');
-			for(var j = 0, maxTags = tags.length;j<maxTags;j++){
-				redondTags[k] = {
-					name:tags[j],
-					checked:true};
-				k++;
-			}
+			redondTags[i] = {
+				name:datatags[i],
+				checked:true};
 		}
+		var cache = {};
 		return redondTags.filter(function(elem,index,array){
 			return cache[elem.name]?0:cache[elem.name]=1;
 		});
@@ -41,7 +36,6 @@ blogIndexApp.controller('IndexController',function ($scope, $http){
 	
 	function getMonths(datamonths){
 		var redondMonths = [];
-		var k = 0;
 		for(var i = 0, maxData = datamonths.length;i<maxData;i++){
 			redondMonths[i] = {
 				name:datamonths[i],
@@ -49,7 +43,7 @@ blogIndexApp.controller('IndexController',function ($scope, $http){
 		}
 		var cache = {};
 		return redondMonths.filter(function(elem,index,array){
-			return cache[elem]?0:cache[elem]=1;
+			return cache[elem.name]?0:cache[elem.name]=1;
 		});
 	}
 	
@@ -63,7 +57,7 @@ blogIndexApp.controller('IndexController',function ($scope, $http){
 	function isTagged(tags){
 		for(var i = 0, nbTags = $scope.tags.length; i < nbTags; i++){
 			if($scope.tags[i].checked){
-				if(tags.indexOf($scope.tags[i].name)>=0){return true;}
+				if(tags.contains($scope.tags[i].name)){return true;}
 			}
 		}
 		return false;

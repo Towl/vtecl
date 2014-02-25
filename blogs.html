@@ -16,7 +16,7 @@ footer: true
 			<div class="row" data-ng-controller="IndexController">
 				<div class="col-sm-9 blog-main main-content">
 					<!-- Liste des archives filtrées -->
-					<ul class="posts">
+					<ul class="posts list-unstyled">
 						<div data-ng-repeat="post in posts">
 							<div data-ng-if="isConcerned(post)">
 								<li>
@@ -36,7 +36,7 @@ footer: true
 					<div class="filters">
 						<h3 class="filters-title">Filtres</h3>
 						<div class="sidebar-module">
-							<h4>Date</h4>
+							<h4>Dates</h4>
 							<form class="forizontal-form" role="form">
 								<div data-ng-repeat="m in months">
 									<input type="checkBox" data-ng-model="m.checked"/><span> {[{m.name}]}</span>

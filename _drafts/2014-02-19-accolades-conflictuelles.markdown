@@ -2,7 +2,7 @@
 layout: post_layout
 title: "Accolades conflictuelles"
 resume: "Il existe d'autres frameworks qui utilisent les doubles accolades pour insérer leur syntaxe. AngularJS fournis un outils pour contourner ce problème."
-tag: Astuce AngularJS
+tags: ['Astuce','AngularJS']
 ---
 
 AngularJS n'est pas le seul framework à utiliser les doubles accolades pour encapsuler sa syntaxe dans le HTML. Des conflits apparaissent lors de l'utilisation de

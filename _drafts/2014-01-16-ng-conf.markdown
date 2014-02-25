@@ -2,7 +2,7 @@
 layout: post_layout
 title:  "NG-CONF-2014!"
 resume: "Deux jours de conférences tenues par les développeurs d'AngularJS et leurs collaborateurs pour parler de leur produit."
-tag: Ng-Conf AngularJS
+tags: ['Ng-Conf','AngularJS']
 ---
 
 De ?? le 16 Janvier 2014, jusqu'a ?? le 17 Janvier 2014 l'équipe de développement du framework

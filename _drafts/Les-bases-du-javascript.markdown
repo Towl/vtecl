@@ -2,7 +2,7 @@
 layout: post_layout
 title: "Le javascript en un mots."
 resume: "Un post pour expliquer les bases du javascript nécessaire à la compréhension de la suite"
-tag: Base
+tags: ['Base']
 ---
 
 Afin de saisir les détails technique du fonctionnement et de l'intérêt d'AngularJS il est nécessaire d'avoir des connaissances de base du language Javascript.
