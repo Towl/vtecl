@@ -17,7 +17,7 @@ en fonction du niveau d'intérêt que suscitera AngularJS auprès de l'auteur.
 <em>Et sinon pourquoi faire ça?</em>
 
 En réalité le travail réalisé autour de ce blog est un exercice demandé lors du cours de "Nouvelles technologies" proposé par l'école Centrale de Lyon et
-auquel l'auteur participe.
+auquel l'auteur participe. Les différents travaux peuvent être suivi sur Twitter avec le hashtag [#vtecl][vtecl] (Veille Technologique Ecole Centrale Lyon).
 
 <em>Pourquoi AngularJS?</em>
 
@@ -41,3 +41,4 @@ différencier ces articles un systèmes de tags est en place (e.g. 'vtecl' conce
 <em>Et notre avis t'en fait quoi?</em>
 
 <em><strong>en chantier...</strong></em>
+[vtecl]:https://twitter.com/#vtecl

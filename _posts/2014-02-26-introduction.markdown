@@ -6,7 +6,7 @@ resume: "AngularJS est un framework javascript qui possède quelques particulari
 		et une mise à niveau peut être nécessaire."
 tags: ['vtecl','AngularJS']
 ---
-Aujoutd'hui l'utilisation d'internet est devenue une nécessité pour beaucoup d'entreprises qui cherchent des moyens de communication et de transfère de données
+Aujourd'hui l'utilisation d'Internet est devenue une nécessité pour beaucoup d'entreprises qui cherchent des moyens de communication et de transfère de données
 efficients. A cette problèmatique s'ajoute la complexité de mise en oeuvre d'infrastructures informatiques et logiciels entre les entreprises et en leurs seins.
 Cette dernière barrière trouve quelques simplifications grâce à l'utilisation d'outils prenant en charge les aspects les plus contraignant du développement 
 informatique. AngularJS est l'un d'eux.
