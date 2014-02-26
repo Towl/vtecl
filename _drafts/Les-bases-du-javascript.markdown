@@ -16,3 +16,8 @@ Ce language permet de dynamiser les page html à la base statique. Malgré sa co
 sur internet. Ceci étant principalement du à l'apparition d'une multitude de framework facilitant son utilisation (JQuery, Ajax, etc...). 
 
 C'est ici qu'intervient AngularJS, qui est un framework dont le concepte se différencie grandement des autres frameworks...
+
+
+
+Le javascript est un language de programmation permettant de réaliser des applications s'executant généralement coté client. Ces applications vont d'une simple
+animation sur une page web à la gestion en temps réél d'une base de données en passant par les jeux vidéos et autres interactions dynamiques. 

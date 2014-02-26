@@ -1,0 +1,43 @@
+---
+layout: post_layout
+title: "Start !"
+resume: "Qu'est ce que Vtecl? Pourquoi AngularJS? Quel est le but de ce site? Toutes les réponses (ou presque) sont dans ce post !"
+categories: ['Apropos']
+tags: ['Blog']
+---
+<em>Qu'est ce que c'est que ce site?</em>
+
+Ce blog a été construit pour suivre l'actualité d'AngularJS pendant au moins trois mois (Janvier 2014 - Mars 2014).
+
+<em>Seulement trois mois ! Ça sert à rien !</em>
+
+Effectivement l'utilité de ce blog est assez limité si son écriture s'arrête à Mars 2014. Cependant il est possible que la production ne s'interrompe pas
+en fonction du niveau d'intérêt que suscitera AngularJS auprès de l'auteur.
+
+<em>Et sinon pourquoi faire ça?</em>
+
+En réalité le travail réalisé autour de ce blog est un exercice demandé lors du cours de "Nouvelles technologies" proposé par l'école Centrale de Lyon et
+auquel l'auteur participe.
+
+<em>Pourquoi AngularJS?</em>
+
+Le développement web est aujourd'hui une problèmatique présente dans toutes les entreprises qu'elles s'en charge directement ou qu'elles la sous-traitent cette
+tâche est devenue inévitable. Les technologies existantes pour réalisé une ne serait-ce qu'une page web sont très nombreuses et plus ou moins efficaces. L'auteur
+à simplement choisi l'une d'elle dont il ne connaissait rien au départ.
+
+<em>C'est qui l'auteur ?</em>
+
+L'auteur c'est Franck Coutouly et il aime pas dire je.
+
+
+<em>Quelles sont les objectifs de ce site exactement ?</em>
+
+Initialement il était simplement demandé d'étudier la technologie de son choix, ici AngularJS, et de suivre l'actualité de cette technologie jusqu'à la fin du
+temps impartie (i.e. jusqu'au 14 mars) en utilisant les outils proposés par Internet. Néansmoins l'auteur s'intéressant grandement aux technologies web et à la
+production d'applications diverses et variées, il s'est lancé dans la production d'un blog en utilisant les fonctionnalités d'AngularJS. Ainsi ce blog proposera
+des articles indiquant certaines astuces de développement ou présentant des outils qui ne seront pas forcément en rapport avec la veille technologique. Pour 
+différencier ces articles un systèmes de tags est en place (e.g. 'vtecl' concernera la veille sur AngularJS).
+
+<em>Et notre avis t'en fait quoi?</em>
+
+<em><strong>en chantier...</strong></em>
