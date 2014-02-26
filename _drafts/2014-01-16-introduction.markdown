@@ -1,7 +1,7 @@
 ---
 layout: post_layout
-title:  "Start !"
+title:  "Introduction"
 resume: "Ce post marque le début de ce blog de veille technologique autour d'AngularJS."
-tags: ['Blog']
+tags: ['vtecl','AngularJS']
 ---
-
+jdj
