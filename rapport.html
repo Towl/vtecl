@@ -4,16 +4,16 @@ title: Rapport
 ---		
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-8 main-header">
-					<h1 id="top">Rapport</h1>
-				</div>
-			</div>
-			<div class="row">
 				<div class="col-sm-8 main-content">
-					{% for post in site.tags.vtecl %}<h2 id="{{post.title}}">{{post.title}}</h2>
-					<div class="common-text">
-						{{post.content}}{% endfor %}
+					<div class="row main-header">
+						<h1 id="top">Rapport</h1>
 					</div>
+					{% for post in site.tags.vtecl %}<div class="row">
+						<h2 id="{{post.title}}">{{post.title}}</h2>
+						<div class="common-text">
+							{{post.content}}
+						</div>
+					</div>{% endfor %}
 				</div>
 				<div class="col-sm-3 col-sm-offset-1 navbar-plan">
 					<h4>Plan</h4>
