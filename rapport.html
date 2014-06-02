@@ -8,8 +8,8 @@ title: Rapport
 					<div class="row main-header">
 						<h1 id="top">Rapport</h1>
 					</div>
-					{% for post in site.tags.vtecl %}<div class="row">
-						<h2 id="{{post.title}}">{{post.title}}</h2>
+					{% for post in site.tags.vtecl reversed %}<div class="row">
+						<h2 id="{{post.idTag}}">{{post.title}}</h2>
 						<div class="common-text">
 							{{post.content}}
 						</div>
@@ -18,7 +18,7 @@ title: Rapport
 				<div class="col-sm-3 col-sm-offset-1 navbar-plan">
 					<h4>Plan</h4>
 					<ol class="nav nav-pills nav-stacked">
-						{% for post in site.tags.vtecl %}<li><a href="#{{post.title}}">{{post.title}}</a></li>
+						{% for post in site.tags.vtecl reversed %}<li><a href="#{{post.idTag}}">{{post.title}}</a></li>
 						{% endfor %}<li><a href="#top">Retour au début</a></li>
 					</ol>
 					<p>

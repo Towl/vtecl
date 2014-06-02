@@ -1,0 +1,20 @@
+---
+layout: post_layout
+title:  "ng-conf-2014"
+resume: "Deux jours de conférences tenues par les développeurs d'AngularJS et leurs collaborateurs pour parler de leur produit."
+idTag: post3
+tags: ['Ng-Conf','AngularJS','vtecl']
+---
+
+Du 16 Janvier 2014 matin, jusqu'au soir du 17 Janvier 2014 l'équipe de développement du framework
+AngularJS s'est réunie a Salt Lake City pour présenter leur produit lors d'une succession de
+conférences. Cet évènement fut la Ng-conf 2014. Le [site officiel][ng-conf] propose une désciption
+détaillée de l'évenement avec la liste des acteurs, le programme et les différents sujets qui
+ont été traités.
+
+Aujourd'hui la ng-conf est terminée cependant les vidéos des différentes conférences ont été
+mises a disposition sur [YouTube][ng-youtube].
+
+
+[ng-conf]:http://www.ng-conf.org
+[ng-youtube]:http://www.youtube.com/user/ngconfvideos
