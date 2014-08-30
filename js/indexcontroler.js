@@ -57,7 +57,7 @@ blogIndexApp.controller('IndexController',function ($scope, $http){
 	function isTagged(tags){
 		for(var i = 0, nbTags = $scope.tags.length; i < nbTags; i++){
 			if($scope.tags[i].checked){
-				if(tags.contains($scope.tags[i].name)){return true;}
+				if(tags.indexOf($scope.tags[i].name) > -1){return true;}
 			}
 		}
 		return false;
@@ -66,7 +66,7 @@ blogIndexApp.controller('IndexController',function ($scope, $http){
 	function isInDate(date){
 		for(var i = 0, nbMonths = $scope.months.length; i < nbMonths; i++){
 			if($scope.months[i].checked){
-				if(date.indexOf($scope.months[i])){return true;}
+				if(date.indexOf($scope.months[i].name) > -1){return true;}
 			}
 		}
 	}
